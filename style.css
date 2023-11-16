@@ -1,6 +1,6 @@
 
  .cardMain{
-    display: grid !important;
+    display: grid ;
     grid-template-columns: repeat(3,auto);
     margin: 1rem auto;
     grid-row-gap: 1rem;
@@ -10,10 +10,8 @@
 } 
 
 
-
-
 .cardMain .card{
-    border: none !important;
+    border: none ;
     height: 100%; 
  
 }
@@ -27,3 +25,18 @@
     object-fit: cover;
     border-radius: .5rem ;
 }
+
+@media  (max-width:1000px) {
+    .cardMain{
+        grid-template-columns: repeat(2,auto);
+    } 
+}
+
+@media  (max-width:681px) {
+    .cardMain{
+      display: flex;
+      flex-direction: column;
+    } 
+}
+
+

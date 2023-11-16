@@ -43,7 +43,7 @@ const randomImage = (images) => {
 	cardMain.innerHTML = ``;
 	images.forEach((image) => {
 		const cardBody = `
-        <div class="card col-md-3 col-lg-6  " style="width: 20rem;">
+        <div class="card col col-md-3 col-lg-6  " style="width: 20rem;">
         <img src="${image.urls.small}" class="card-img-top" alt="${image.alt_description}">
         </div>
       `;
